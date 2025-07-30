@@ -6,7 +6,7 @@ import os
 
 GITHUB_TOKEN = "your_token_here"
 REPO_NAME = "SSAFYstudyAlgoPoolja/problem-box"
-PROBLEMS_PATH = "problems"
+PROBLEMS_PATH = "../problems"
 
 def fetch_baekjoon_problem(problem_id):
     url = f"https://www.acmicpc.net/problem/{problem_id}"
