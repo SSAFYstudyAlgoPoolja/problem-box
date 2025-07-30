@@ -3,16 +3,25 @@ from bs4 import BeautifulSoup
 from github import Github
 import base64
 import os
+import time
 
-GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 REPO_NAME = "SSAFYstudyAlgoPoolja/problem-box"
 PROBLEMS_PATH = "boj/problems"
 
 def fetch_problem(problem_id):
     url = f"https://www.acmicpc.net/problem/{problem_id}"
-    res = requests.get(url)
-    if res.status_code != 200:
-        print(f"❌ 문제 {problem_id} 가져오기 실패")
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    
+    try:
+        res = requests.get(url, headers=headers, timeout=10)
+        if res.status_code != 200:
+            print(f"❌ 문제 {problem_id} 가져오기 실패 (HTTP {res.status_code})")
+            return None
+    except Exception as e:
+        print(f"❌ 문제 {problem_id} 네트워크 오류: {e}")
         return None
 
     soup = BeautifulSoup(res.text, 'html.parser')
@@ -114,6 +123,11 @@ def read_problem_ids():
 def main():
     print("🚀 BOJ 문제 크롤링 시작")
     
+    # GitHub Token 확인
+    if not GITHUB_TOKEN:
+        print("❌ GITHUB_TOKEN 환경변수가 설정되지 않았습니다")
+        return
+    
     problem_ids = read_problem_ids()
     if not problem_ids:
         print("❌ 처리할 문제 ID가 없습니다")
@@ -133,6 +147,9 @@ def main():
         # GitHub에 업로드
         if upload_to_github(problem_id, content):
             success_count += 1
+        
+        # API 요청 간격을 두어 rate limit 방지
+        time.sleep(1)
     
     print(f"\n🎉 완료! {success_count}/{len(problem_ids)}개 문제 처리 성공")
 
