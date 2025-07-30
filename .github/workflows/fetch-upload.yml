@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
 
       - name: Python 설치
         uses: actions/setup-python@v4
@@ -25,3 +27,11 @@ jobs:
         run: python boj/fetch_and_upload.py
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
+      - name: 변경사항 커밋 및 푸시
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff --staged --quiet || git commit -m "🤖 BOJ 문제 자동 업로드"
+          git push
