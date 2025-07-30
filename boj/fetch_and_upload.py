@@ -4,15 +4,15 @@ from github import Github
 import base64
 import os
 
-GITHUB_TOKEN = "your_token_here"
+GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
 REPO_NAME = "SSAFYstudyAlgoPoolja/problem-box"
-PROBLEMS_PATH = "../problems"
+PROBLEMS_PATH = "problems"
 
-def fetch_baekjoon_problem(problem_id):
+def fetch_problem(problem_id):
     url = f"https://www.acmicpc.net/problem/{problem_id}"
     res = requests.get(url)
     if res.status_code != 200:
-        print(f"❌ 문제 {problem_id} 크롤링 실패")
+        print(f"❌ 문제 {problem_id} 가져오기 실패")
         return None
 
     soup = BeautifulSoup(res.text, 'html.parser')
@@ -25,11 +25,11 @@ def fetch_baekjoon_problem(problem_id):
         samples = soup.select('.sampledata')
         sample_input = samples[0].text.strip() if samples else ''
         sample_output = samples[1].text.strip() if len(samples) > 1 else ''
-    except:
-        print(f"❌ 문제 {problem_id} 파싱 실패")
+    except Exception as e:
+        print(f"❌ 파싱 실패: {e}")
         return None
 
-    content = f"""# {problem_id}. {title}
+    return f"""# {problem_id}. {title}
 
 ## 📘 문제 설명
 {desc}

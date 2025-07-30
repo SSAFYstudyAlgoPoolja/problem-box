@@ -1,0 +1,27 @@
+name: BOJ 문제 자동 업로드
+
+on:
+  push:
+    paths:
+      - 'boj/problem_id.md'  # 이 파일이 수정되었을 때만 작동
+
+jobs:
+  run-fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v3
+
+      - name: Python 설치
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install requests beautifulsoup4 PyGithub
+
+      - name: BOJ 문제 크롤링 및 업로드
+        run: python boj/fetch_and_upload.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
