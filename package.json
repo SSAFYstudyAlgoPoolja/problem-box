@@ -1,0 +1,17 @@
+{
+  "name": "algorithm-problem-gacha",
+  "version": "1.0.0",
+  "description": "Algorithm Problem Gacha System with GitHub OAuth",
+  "main": "docs/index.html",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'Static site, no build needed'",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": ["algorithm", "gacha", "github", "oauth", "study"],
+  "author": "SSAFY Algorithm Study Group",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

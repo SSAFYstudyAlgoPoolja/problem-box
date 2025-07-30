@@ -4,10 +4,11 @@ let problemsData = null;
 let selectedCategory = null;
 let currentProblem = null;
 
-// GitHub App 설정 (실제 배포시 변경 필요)
-const GITHUB_CLIENT_ID = 'your_github_app_client_id'; // GitHub App Client ID
+// GitHub App 설정 (진짜 OAuth!)
+const GITHUB_CLIENT_ID = 'Iv23liDaJh9UDXOPLKCC'; // ✅ 실제 GitHub App Client ID
 const REPO_OWNER = 'SSAFYstudyAlgoPoolja';
 const REPO_NAME = 'problem-box';
+const NETLIFY_DOMAIN = 'YOUR_NETLIFY_DOMAIN'; // ← Netlify 도메인으로 변경
 
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
@@ -20,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (code) {
         handleGitHubCallback(code);
     } else {
-        checkExistingAuth();
+        // OAuth 없이 데모 사용자로 자동 로그인
+        setupDemoUser();
     }
     
     loadProblemsData();
@@ -37,10 +39,64 @@ function initializeEventListeners() {
     });
 }
 
-// GitHub 로그인
+// 데모 사용자 설정 (OAuth 없이 작동)
+function setupDemoUser() {
+    const demoUser = {
+        login: 'demo-user',
+        avatar_url: 'https://github.com/identicons/demo-user.png',
+        name: 'Demo User',
+        access_token: 'demo_mode'
+    };
+    
+    localStorage.setItem('github_user', JSON.stringify(demoUser));
+    currentUser = demoUser;
+    showMainContent();
+}
+
+// 진짜 GitHub OAuth 로그인!
 function loginWithGitHub() {
-    const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&scope=repo&redirect_uri=${encodeURIComponent(window.location.origin)}`;
-    window.location.href = githubAuthUrl;
+    if (!GITHUB_CLIENT_ID || GITHUB_CLIENT_ID === 'YOUR_GITHUB_CLIENT_ID') {
+        // 설정이 안 된 경우 데모 모드
+        alert('GitHub App이 아직 설정되지 않았습니다. 데모 모드로 진행합니다.');
+        setupDemoUser();
+        return;
+    }
+
+    const redirectUri = `https://${NETLIFY_DOMAIN}/auth/callback`;
+    const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&scope=repo,user:email&redirect_uri=${encodeURIComponent(redirectUri)}`;
+    
+    // 팝업 창으로 인증
+    const popup = window.open(
+        githubAuthUrl,
+        'github-auth',
+        'width=600,height=700,scrollbars=yes,resizable=yes'
+    );
+
+    // 팝업에서 메시지 받기
+    const handleMessage = (event) => {
+        if (event.data.type === 'GITHUB_AUTH_SUCCESS') {
+            popup.close();
+            window.removeEventListener('message', handleMessage);
+            
+            // 사용자 정보 저장
+            const user = event.data.user;
+            localStorage.setItem('github_user', JSON.stringify(user));
+            currentUser = user;
+            showMainContent();
+            
+            alert(`🎉 ${user.name || user.login}님, 환영합니다!`);
+        }
+    };
+
+    window.addEventListener('message', handleMessage);
+
+    // 팝업이 닫히면 이벤트 리스너 제거
+    const checkClosed = setInterval(() => {
+        if (popup.closed) {
+            clearInterval(checkClosed);
+            window.removeEventListener('message', handleMessage);
+        }
+    }, 1000);
 }
 
 // GitHub OAuth 콜백 처리
@@ -80,7 +136,8 @@ function checkExistingAuth() {
         currentUser = JSON.parse(savedUser);
         showMainContent();
     } else {
-        showAuthSection();
+        // OAuth 없이 바로 데모 모드로 진입
+        setupDemoUser();
     }
 }
 
