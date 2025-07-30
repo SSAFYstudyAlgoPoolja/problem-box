@@ -186,12 +186,36 @@ def read_problem_ids():
         print(f"❌ problem_id.md 읽기 실패: {e}")
         return []
 
+def test_github_token():
+    """GitHub 토큰 권한 테스트"""
+    try:
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(REPO_NAME)
+        print(f"✅ GitHub 연결 성공: {repo.full_name}")
+        
+        # 권한 테스트를 위해 리포지토리 정보 가져오기
+        print(f"📊 리포지토리 정보:")
+        print(f"   - 이름: {repo.name}")
+        print(f"   - 소유자: {repo.owner.login}")
+        print(f"   - 권한: {repo.permissions}")
+        
+        return True
+    except Exception as e:
+        print(f"❌ GitHub 토큰 테스트 실패: {e}")
+        return False
+
 def main():
     print("🚀 BOJ 문제 크롤링 시작")
     
     # GitHub Token 확인
     if not GITHUB_TOKEN:
         print("❌ GITHUB_TOKEN 환경변수가 설정되지 않았습니다")
+        return
+    
+    # GitHub 토큰 권한 테스트
+    print("\n🔍 GitHub 토큰 권한 확인 중...")
+    if not test_github_token():
+        print("❌ GitHub 토큰에 문제가 있습니다. 토큰 권한을 확인해주세요.")
         return
     
     problem_ids = read_problem_ids()
