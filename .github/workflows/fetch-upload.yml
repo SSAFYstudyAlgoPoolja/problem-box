@@ -8,7 +8,9 @@ on:
 jobs:
   run-fetch:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+      
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v3
@@ -28,10 +30,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
-      - name: 변경사항 커밋 및 푸시
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git diff --staged --quiet || git commit -m "🤖 BOJ 문제 자동 업로드"
-          git push
+
