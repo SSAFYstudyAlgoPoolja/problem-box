@@ -8,7 +8,7 @@ let currentProblem = null;
 const GITHUB_CLIENT_ID = 'Iv23liDaJh9UDXOPLKCC'; // ✅ 실제 GitHub App Client ID
 const REPO_OWNER = 'SSAFYstudyAlgoPoolja';
 const REPO_NAME = 'problem-box';
-const NETLIFY_DOMAIN = 'YOUR_NETLIFY_DOMAIN'; // ← Netlify 도메인으로 변경
+const NETLIFY_DOMAIN = 'algorithm-problem-gacha.netlify.app'; // ✅ 실제 Netlify 도메인
 
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
