@@ -4,19 +4,85 @@ from github import Github
 import base64
 import os
 import time
+import random
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 REPO_NAME = "SSAFYstudyAlgoPoolja/problem-box"
 PROBLEMS_PATH = "boj/problems"
 
+def fetch_problem_from_solved_ac(problem_id):
+    """solved.ac API를 통해 문제 정보 가져오기 (대안)"""
+    try:
+        # solved.ac API 호출
+        url = f"https://solved.ac/api/v3/problem/show?problemId={problem_id}"
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+        
+        res = requests.get(url, headers=headers, timeout=10)
+        if res.status_code != 200:
+            return None
+            
+        data = res.json()
+        
+        # 기본적인 문제 정보만 제공 (solved.ac는 문제 설명을 제공하지 않음)
+        title = data.get('titleKo', f'문제 {problem_id}')
+        level = data.get('level', 0)
+        tags = [tag.get('displayNames', [{}])[0].get('name', '') for tag in data.get('tags', [])]
+        
+        return f"""# {problem_id}. {title}
+
+## 📊 문제 정보
+- **난이도**: {level}
+- **태그**: {', '.join(tags) if tags else '없음'}
+
+## 🔗 문제 링크
+- [BOJ 문제 페이지](https://www.acmicpc.net/problem/{problem_id})
+- [solved.ac 문제 페이지](https://solved.ac/problems/{problem_id})
+
+> ⚠️ 이 문제는 solved.ac API를 통해 생성되었습니다. 
+> 자세한 문제 설명은 BOJ 페이지를 참고해주세요.
+"""
+    except Exception as e:
+        print(f"❌ solved.ac API 실패: {e}")
+        return None
+
 def fetch_problem(problem_id):
+    # 다양한 User-Agent 목록
+    user_agents = [
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15'
+    ]
+    
     url = f"https://www.acmicpc.net/problem/{problem_id}"
+    
+    # 더 현실적인 브라우저 헤더
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        'User-Agent': random.choice(user_agents),
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'Accept-Language': 'ko-KR,ko;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'DNT': '1',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Sec-Fetch-User': '?1',
+        'Cache-Control': 'max-age=0'
     }
     
+    # 세션 사용으로 연결 유지
+    session = requests.Session()
+    session.headers.update(headers)
+    
     try:
-        res = requests.get(url, headers=headers, timeout=10)
+        # 랜덤 지연으로 자연스러운 요청 패턴 생성
+        time.sleep(random.uniform(2, 5))
+        
+        res = session.get(url, timeout=15)
         if res.status_code != 200:
             print(f"❌ 문제 {problem_id} 가져오기 실패 (HTTP {res.status_code})")
             return None
@@ -139,17 +205,24 @@ def main():
     for problem_id in problem_ids:
         print(f"\n🔄 문제 {problem_id} 처리 중...")
         
-        # 문제 크롤링
+        # 문제 크롤링 (BOJ 직접 크롤링 시도)
         content = fetch_problem(problem_id)
+        
+        # BOJ 크롤링 실패시 solved.ac API 사용
         if not content:
+            print(f"🔄 solved.ac API로 재시도...")
+            content = fetch_problem_from_solved_ac(problem_id)
+            
+        if not content:
+            print(f"❌ 모든 방법 실패 - 문제 {problem_id} 건너뜀")
             continue
             
         # GitHub에 업로드
         if upload_to_github(problem_id, content):
             success_count += 1
         
-        # API 요청 간격을 두어 rate limit 방지
-        time.sleep(1)
+        # 자연스러운 요청 간격
+        time.sleep(random.uniform(3, 7))
     
     print(f"\n🎉 완료! {success_count}/{len(problem_ids)}개 문제 처리 성공")
 
