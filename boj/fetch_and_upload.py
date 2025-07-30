@@ -41,4 +41,4 @@ def fetch_problem(problem_id):
 {output_desc}
 
 ## 🧪 입력 예시
-"문제 가져오기 성공!"
+"""
