@@ -41,4 +41,3 @@ def fetch_problem(problem_id):
 {output_desc}
 
 ## 🧪 입력 예시
-"""
