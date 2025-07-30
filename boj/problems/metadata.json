@@ -1,0 +1,2963 @@
+{
+  "last_updated": "2025-07-30T14:14:12.629143",
+  "total_problems": 119,
+  "categories": {
+    "배열": [
+      {
+        "problem_id": "1000",
+        "title": "A+B",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1008",
+        "title": "A/B",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1330",
+        "title": "두 수 비교하기",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2438",
+        "title": "별 찍기 - 1",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2439",
+        "title": "별 찍기 - 2",
+        "level": 2,
+        "tier": "Bronze IV",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2557",
+        "title": "Hello World",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2741",
+        "title": "N 찍기",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2742",
+        "title": "기찍 N",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2753",
+        "title": "윤년",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "8393",
+        "title": "합",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9498",
+        "title": "시험 성적",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10171",
+        "title": "고양이",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10172",
+        "title": "개",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10430",
+        "title": "나머지",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10809",
+        "title": "알파벳 찾기",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10818",
+        "title": "최소, 최대",
+        "level": 3,
+        "tier": "Bronze III",
+        "category": "배열",
+        "tags": [
+          "수학",
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10926",
+        "title": "??!",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10950",
+        "title": "A+B - 3",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10951",
+        "title": "A+B - 4",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10952",
+        "title": "A+B - 5",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11654",
+        "title": "아스키 코드",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11720",
+        "title": "숫자의 합",
+        "level": 2,
+        "tier": "Bronze IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "수학",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "15552",
+        "title": "빠른 A+B",
+        "level": 2,
+        "tier": "Bronze IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "25083",
+        "title": "새싹",
+        "level": 1,
+        "tier": "Bronze V",
+        "category": "배열",
+        "tags": [
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1152",
+        "title": "단어의 개수",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1157",
+        "title": "단어 공부",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2675",
+        "title": "문자열 반복",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2750",
+        "title": "수 정렬하기",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "배열",
+        "tags": [
+          "정렬",
+          "구현"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "3009",
+        "title": "네 번째 점",
+        "level": 3,
+        "tier": "Bronze III",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "기하학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "3046",
+        "title": "R2",
+        "level": 2,
+        "tier": "Bronze IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "사칙연산",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "7568",
+        "title": "덩치",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10250",
+        "title": "ACM 호텔",
+        "level": 3,
+        "tier": "Bronze III",
+        "category": "배열",
+        "tags": [
+          "수학",
+          "구현",
+          "사칙연산"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10773",
+        "title": "제로",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "자료 구조",
+          "스택"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10828",
+        "title": "스택",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "자료 구조",
+          "스택"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11050",
+        "title": "이항 계수 1",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "배열",
+        "tags": [
+          "수학",
+          "구현",
+          "조합론"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1259",
+        "title": "팰린드롬수",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1316",
+        "title": "그룹 단어 체커",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1966",
+        "title": "프린터 큐",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "자료 구조",
+          "시뮬레이션",
+          "큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9093",
+        "title": "단어 뒤집기",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "문자열"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11866",
+        "title": "요세푸스 문제 0",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "자료 구조",
+          "큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1912",
+        "title": "연속합",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "배열",
+        "tags": [
+          "다이나믹 프로그래밍",
+          "최대 부분 배열 문제"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "16234",
+        "title": "인구 이동",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "그래프 이론",
+          "그래프 탐색",
+          "시뮬레이션",
+          "너비 우선 탐색"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1018",
+        "title": "체스판 다시 칠하기",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "5430",
+        "title": "AC",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "배열",
+        "tags": [
+          "덱",
+          "파싱",
+          "구현",
+          "문자열",
+          "자료 구조"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "16236",
+        "title": "아기 상어",
+        "level": 13,
+        "tier": "Gold III",
+        "category": "배열",
+        "tags": [
+          "구현",
+          "그래프 이론",
+          "그래프 탐색",
+          "시뮬레이션",
+          "너비 우선 탐색"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "수학": [
+      {
+        "problem_id": "1546",
+        "title": "평균",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "사칙연산"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2292",
+        "title": "벌집",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "수학",
+        "tags": [
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2609",
+        "title": "최대공약수와 최소공배수",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "정수론",
+          "유클리드 호제법"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2839",
+        "title": "설탕 배달",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "수학",
+        "tags": [
+          "다이나믹 프로그래밍",
+          "그리디 알고리즘",
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2869",
+        "title": "달팽이는 올라가고 싶다",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "수학",
+        "tags": [
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "4153",
+        "title": "직각삼각형",
+        "level": 3,
+        "tier": "Bronze III",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "기하학",
+          "피타고라스 정리"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "4344",
+        "title": "평균은 넘겠지",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "사칙연산"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2609",
+        "title": "최대공약수와 최소공배수",
+        "level": 5,
+        "tier": "Bronze I",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "정수론",
+          "유클리드 호제법"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1541",
+        "title": "잃어버린 괄호",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "그리디 알고리즘",
+          "문자열",
+          "파싱"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9461",
+        "title": "파도반 수열",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1011",
+        "title": "Fly me to the Alpha Centauri",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "수학",
+        "tags": [
+          "수학"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1629",
+        "title": "곱셈",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "분할 정복을 이용한 거듭제곱"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1712",
+        "title": "손익분기점",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "수학",
+        "tags": [
+          "수학",
+          "사칙연산"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "자료구조": [
+      {
+        "problem_id": "1920",
+        "title": "수 찾기",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "정렬",
+          "이분 탐색",
+          "집합과 맵",
+          "해시를 사용한 집합과 맵"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10845",
+        "title": "큐",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2164",
+        "title": "카드2",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10816",
+        "title": "숫자 카드 2",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "정렬",
+          "이분 탐색",
+          "해시를 사용한 집합과 맵"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11279",
+        "title": "최대 힙",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "우선순위 큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "18258",
+        "title": "큐 2",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1874",
+        "title": "스택 수열",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "자료구조",
+        "tags": [
+          "자료 구조",
+          "스택"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "완전탐색": [
+      {
+        "problem_id": "2231",
+        "title": "분해합",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "완전탐색",
+        "tags": [
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2798",
+        "title": "블랙잭",
+        "level": 4,
+        "tier": "Bronze II",
+        "category": "완전탐색",
+        "tags": [
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1436",
+        "title": "영화감독 숌",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "완전탐색",
+        "tags": [
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "14501",
+        "title": "퇴사",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "완전탐색",
+        "tags": [
+          "다이나믹 프로그래밍",
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1065",
+        "title": "한수",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "완전탐색",
+        "tags": [
+          "수학",
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1107",
+        "title": "리모컨",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "완전탐색",
+        "tags": [
+          "브루트포스 알고리즘"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9663",
+        "title": "N-Queen",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "완전탐색",
+        "tags": [
+          "브루트포스 알고리즘",
+          "백트래킹"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "15649",
+        "title": "N과 M (1)",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "완전탐색",
+        "tags": [
+          "백트래킹"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "15650",
+        "title": "N과 M (2)",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "완전탐색",
+        "tags": [
+          "백트래킹"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "문자열": [
+      {
+        "problem_id": "1181",
+        "title": "단어 정렬",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "문자열",
+        "tags": [
+          "문자열",
+          "정렬"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1764",
+        "title": "듣보잡",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "문자열",
+        "tags": [
+          "자료 구조",
+          "문자열",
+          "정렬",
+          "집합과 맵",
+          "해시를 사용한 집합과 맵"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "4949",
+        "title": "균형잡힌 세상",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "문자열",
+        "tags": [
+          "자료 구조",
+          "문자열",
+          "스택"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9012",
+        "title": "괄호",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "문자열",
+        "tags": [
+          "자료 구조",
+          "문자열",
+          "스택"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9935",
+        "title": "문자열 폭발",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "문자열",
+        "tags": [
+          "자료 구조",
+          "문자열",
+          "스택"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "이분탐색": [
+      {
+        "problem_id": "1654",
+        "title": "랜선 자르기",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "이분탐색",
+        "tags": [
+          "이분 탐색",
+          "매개 변수 탐색"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "정렬": [
+      {
+        "problem_id": "2751",
+        "title": "수 정렬하기 2",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "정렬",
+        "tags": [
+          "정렬"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11650",
+        "title": "좌표 정렬하기",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "정렬",
+        "tags": [
+          "정렬"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11651",
+        "title": "좌표 정렬하기 2",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "정렬",
+        "tags": [
+          "정렬"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1931",
+        "title": "회의실 배정",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "정렬",
+        "tags": [
+          "그리디 알고리즘",
+          "정렬"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1931",
+        "title": "회의실 배정",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "정렬",
+        "tags": [
+          "그리디 알고리즘",
+          "정렬"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10814",
+        "title": "나이순 정렬",
+        "level": 6,
+        "tier": "Silver V",
+        "category": "정렬",
+        "tags": [
+          "정렬",
+          "집합과 맵"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11399",
+        "title": "ATM",
+        "level": 7,
+        "tier": "Silver IV",
+        "category": "정렬",
+        "tags": [
+          "그리디 알고리즘",
+          "정렬"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "그래프": [
+      {
+        "problem_id": "7576",
+        "title": "토마토",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "그래프",
+        "tags": [
+          "너비 우선 탐색",
+          "그래프 이론",
+          "그래프 탐색",
+          "격자 그래프",
+          "최단 경로"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1012",
+        "title": "유기농 배추",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "깊이 우선 탐색",
+          "격자 그래프",
+          "플러드 필"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1260",
+        "title": "DFS와 BFS",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "깊이 우선 탐색"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1697",
+        "title": "숨바꼭질",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2178",
+        "title": "미로 탐색",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "격자 그래프"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2206",
+        "title": "벽 부수고 이동하기",
+        "level": 13,
+        "tier": "Gold III",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "격자 그래프"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2606",
+        "title": "바이러스",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "깊이 우선 탐색"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2665",
+        "title": "미로만들기",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "최단 경로",
+          "데이크스트라",
+          "격자 그래프",
+          "0-1 너비 우선 탐색"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2667",
+        "title": "단지번호붙이기",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "깊이 우선 탐색",
+          "격자 그래프",
+          "플러드 필"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "4963",
+        "title": "섬의 개수",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "깊이 우선 탐색",
+          "격자 그래프",
+          "플러드 필"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "5014",
+        "title": "스타트링크",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "7569",
+        "title": "토마토",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "그래프",
+        "tags": [
+          "너비 우선 탐색",
+          "그래프 이론",
+          "그래프 탐색",
+          "격자 그래프",
+          "최단 경로"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9019",
+        "title": "DSLR",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "너비 우선 탐색",
+          "역추적"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1167",
+        "title": "트리의 지름",
+        "level": 14,
+        "tier": "Gold II",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "트리",
+          "깊이 우선 탐색",
+          "트리의 지름"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1753",
+        "title": "최단경로",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "최단 경로",
+          "데이크스트라"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "7662",
+        "title": "이중 우선순위 큐",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "그래프",
+        "tags": [
+          "자료 구조",
+          "집합과 맵",
+          "트리를 사용한 집합과 맵",
+          "우선순위 큐"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11403",
+        "title": "경로 찾기",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "그래프 탐색",
+          "최단 경로",
+          "플로이드–워셜"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11404",
+        "title": "플로이드",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "그래프",
+        "tags": [
+          "그래프 이론",
+          "최단 경로",
+          "플로이드–워셜"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "DP": [
+      {
+        "problem_id": "1003",
+        "title": "피보나치 함수",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1463",
+        "title": "1로 만들기",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1904",
+        "title": "01타일",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1932",
+        "title": "정수 삼각형",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2156",
+        "title": "포도주 시식",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2579",
+        "title": "계단 오르기",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "9095",
+        "title": "1, 2, 3 더하기",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "10844",
+        "title": "쉬운 계단 수",
+        "level": 10,
+        "tier": "Silver I",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11726",
+        "title": "2×n 타일링",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "11727",
+        "title": "2×n 타일링 2",
+        "level": 8,
+        "tier": "Silver III",
+        "category": "DP",
+        "tags": [
+          "다이나믹 프로그래밍"
+        ],
+        "source": "solved.ac"
+      }
+    ],
+    "기타": [
+      {
+        "problem_id": "1074",
+        "title": "Z",
+        "level": 11,
+        "tier": "Gold V",
+        "category": "기타",
+        "tags": [
+          "분할 정복",
+          "재귀"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "1806",
+        "title": "부분합",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "기타",
+        "tags": [
+          "누적 합",
+          "두 포인터"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2448",
+        "title": "별 찍기 - 11",
+        "level": 12,
+        "tier": "Gold IV",
+        "category": "기타",
+        "tags": [
+          "재귀"
+        ],
+        "source": "solved.ac"
+      },
+      {
+        "problem_id": "2630",
+        "title": "색종이 만들기",
+        "level": 9,
+        "tier": "Silver II",
+        "category": "기타",
+        "tags": [
+          "분할 정복",
+          "재귀"
+        ],
+        "source": "solved.ac"
+      }
+    ]
+  },
+  "problems": {
+    "1000": {
+      "problem_id": "1000",
+      "title": "A+B",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "1008": {
+      "problem_id": "1008",
+      "title": "A/B",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "1330": {
+      "problem_id": "1330",
+      "title": "두 수 비교하기",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2438": {
+      "problem_id": "2438",
+      "title": "별 찍기 - 1",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2439": {
+      "problem_id": "2439",
+      "title": "별 찍기 - 2",
+      "level": 2,
+      "tier": "Bronze IV",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2557": {
+      "problem_id": "2557",
+      "title": "Hello World",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2741": {
+      "problem_id": "2741",
+      "title": "N 찍기",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2742": {
+      "problem_id": "2742",
+      "title": "기찍 N",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2753": {
+      "problem_id": "2753",
+      "title": "윤년",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "8393": {
+      "problem_id": "8393",
+      "title": "합",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "9498": {
+      "problem_id": "9498",
+      "title": "시험 성적",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "10171": {
+      "problem_id": "10171",
+      "title": "고양이",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "10172": {
+      "problem_id": "10172",
+      "title": "개",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "10430": {
+      "problem_id": "10430",
+      "title": "나머지",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "10809": {
+      "problem_id": "10809",
+      "title": "알파벳 찾기",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "10818": {
+      "problem_id": "10818",
+      "title": "최소, 최대",
+      "level": 3,
+      "tier": "Bronze III",
+      "category": "배열",
+      "tags": [
+        "수학",
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "10926": {
+      "problem_id": "10926",
+      "title": "??!",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "10950": {
+      "problem_id": "10950",
+      "title": "A+B - 3",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "10951": {
+      "problem_id": "10951",
+      "title": "A+B - 4",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "10952": {
+      "problem_id": "10952",
+      "title": "A+B - 5",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "11654": {
+      "problem_id": "11654",
+      "title": "아스키 코드",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "11720": {
+      "problem_id": "11720",
+      "title": "숫자의 합",
+      "level": 2,
+      "tier": "Bronze IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "수학",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "15552": {
+      "problem_id": "15552",
+      "title": "빠른 A+B",
+      "level": 2,
+      "tier": "Bronze IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "25083": {
+      "problem_id": "25083",
+      "title": "새싹",
+      "level": 1,
+      "tier": "Bronze V",
+      "category": "배열",
+      "tags": [
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "1152": {
+      "problem_id": "1152",
+      "title": "단어의 개수",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "1157": {
+      "problem_id": "1157",
+      "title": "단어 공부",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "1546": {
+      "problem_id": "1546",
+      "title": "평균",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "사칙연산"
+      ],
+      "source": "solved.ac"
+    },
+    "1920": {
+      "problem_id": "1920",
+      "title": "수 찾기",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "정렬",
+        "이분 탐색",
+        "집합과 맵",
+        "해시를 사용한 집합과 맵"
+      ],
+      "source": "solved.ac"
+    },
+    "2231": {
+      "problem_id": "2231",
+      "title": "분해합",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "완전탐색",
+      "tags": [
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "2292": {
+      "problem_id": "2292",
+      "title": "벌집",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "수학",
+      "tags": [
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "2609": {
+      "problem_id": "2609",
+      "title": "최대공약수와 최소공배수",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "정수론",
+        "유클리드 호제법"
+      ],
+      "source": "solved.ac"
+    },
+    "2675": {
+      "problem_id": "2675",
+      "title": "문자열 반복",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "2750": {
+      "problem_id": "2750",
+      "title": "수 정렬하기",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "배열",
+      "tags": [
+        "정렬",
+        "구현"
+      ],
+      "source": "solved.ac"
+    },
+    "2798": {
+      "problem_id": "2798",
+      "title": "블랙잭",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "완전탐색",
+      "tags": [
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "2839": {
+      "problem_id": "2839",
+      "title": "설탕 배달",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "수학",
+      "tags": [
+        "다이나믹 프로그래밍",
+        "그리디 알고리즘",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "2869": {
+      "problem_id": "2869",
+      "title": "달팽이는 올라가고 싶다",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "수학",
+      "tags": [
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "3009": {
+      "problem_id": "3009",
+      "title": "네 번째 점",
+      "level": 3,
+      "tier": "Bronze III",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "기하학"
+      ],
+      "source": "solved.ac"
+    },
+    "3046": {
+      "problem_id": "3046",
+      "title": "R2",
+      "level": 2,
+      "tier": "Bronze IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "사칙연산",
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "4153": {
+      "problem_id": "4153",
+      "title": "직각삼각형",
+      "level": 3,
+      "tier": "Bronze III",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "기하학",
+        "피타고라스 정리"
+      ],
+      "source": "solved.ac"
+    },
+    "4344": {
+      "problem_id": "4344",
+      "title": "평균은 넘겠지",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "사칙연산"
+      ],
+      "source": "solved.ac"
+    },
+    "7568": {
+      "problem_id": "7568",
+      "title": "덩치",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "10250": {
+      "problem_id": "10250",
+      "title": "ACM 호텔",
+      "level": 3,
+      "tier": "Bronze III",
+      "category": "배열",
+      "tags": [
+        "수학",
+        "구현",
+        "사칙연산"
+      ],
+      "source": "solved.ac"
+    },
+    "10773": {
+      "problem_id": "10773",
+      "title": "제로",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "자료 구조",
+        "스택"
+      ],
+      "source": "solved.ac"
+    },
+    "10828": {
+      "problem_id": "10828",
+      "title": "스택",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "자료 구조",
+        "스택"
+      ],
+      "source": "solved.ac"
+    },
+    "10845": {
+      "problem_id": "10845",
+      "title": "큐",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "큐"
+      ],
+      "source": "solved.ac"
+    },
+    "11050": {
+      "problem_id": "11050",
+      "title": "이항 계수 1",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "배열",
+      "tags": [
+        "수학",
+        "구현",
+        "조합론"
+      ],
+      "source": "solved.ac"
+    },
+    "1181": {
+      "problem_id": "1181",
+      "title": "단어 정렬",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "문자열",
+      "tags": [
+        "문자열",
+        "정렬"
+      ],
+      "source": "solved.ac"
+    },
+    "1259": {
+      "problem_id": "1259",
+      "title": "팰린드롬수",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "1316": {
+      "problem_id": "1316",
+      "title": "그룹 단어 체커",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "1436": {
+      "problem_id": "1436",
+      "title": "영화감독 숌",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "완전탐색",
+      "tags": [
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "1654": {
+      "problem_id": "1654",
+      "title": "랜선 자르기",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "이분탐색",
+      "tags": [
+        "이분 탐색",
+        "매개 변수 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "1764": {
+      "problem_id": "1764",
+      "title": "듣보잡",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "문자열",
+      "tags": [
+        "자료 구조",
+        "문자열",
+        "정렬",
+        "집합과 맵",
+        "해시를 사용한 집합과 맵"
+      ],
+      "source": "solved.ac"
+    },
+    "1966": {
+      "problem_id": "1966",
+      "title": "프린터 큐",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "자료 구조",
+        "시뮬레이션",
+        "큐"
+      ],
+      "source": "solved.ac"
+    },
+    "2164": {
+      "problem_id": "2164",
+      "title": "카드2",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "큐"
+      ],
+      "source": "solved.ac"
+    },
+    "2751": {
+      "problem_id": "2751",
+      "title": "수 정렬하기 2",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "정렬",
+      "tags": [
+        "정렬"
+      ],
+      "source": "solved.ac"
+    },
+    "4949": {
+      "problem_id": "4949",
+      "title": "균형잡힌 세상",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "문자열",
+      "tags": [
+        "자료 구조",
+        "문자열",
+        "스택"
+      ],
+      "source": "solved.ac"
+    },
+    "7576": {
+      "problem_id": "7576",
+      "title": "토마토",
+      "level": 11,
+      "tier": "Gold V",
+      "category": "그래프",
+      "tags": [
+        "너비 우선 탐색",
+        "그래프 이론",
+        "그래프 탐색",
+        "격자 그래프",
+        "최단 경로"
+      ],
+      "source": "solved.ac"
+    },
+    "9012": {
+      "problem_id": "9012",
+      "title": "괄호",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "문자열",
+      "tags": [
+        "자료 구조",
+        "문자열",
+        "스택"
+      ],
+      "source": "solved.ac"
+    },
+    "9093": {
+      "problem_id": "9093",
+      "title": "단어 뒤집기",
+      "level": 5,
+      "tier": "Bronze I",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "문자열"
+      ],
+      "source": "solved.ac"
+    },
+    "10816": {
+      "problem_id": "10816",
+      "title": "숫자 카드 2",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "정렬",
+        "이분 탐색",
+        "해시를 사용한 집합과 맵"
+      ],
+      "source": "solved.ac"
+    },
+    "11279": {
+      "problem_id": "11279",
+      "title": "최대 힙",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "우선순위 큐"
+      ],
+      "source": "solved.ac"
+    },
+    "11650": {
+      "problem_id": "11650",
+      "title": "좌표 정렬하기",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "정렬",
+      "tags": [
+        "정렬"
+      ],
+      "source": "solved.ac"
+    },
+    "11651": {
+      "problem_id": "11651",
+      "title": "좌표 정렬하기 2",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "정렬",
+      "tags": [
+        "정렬"
+      ],
+      "source": "solved.ac"
+    },
+    "11866": {
+      "problem_id": "11866",
+      "title": "요세푸스 문제 0",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "자료 구조",
+        "큐"
+      ],
+      "source": "solved.ac"
+    },
+    "18258": {
+      "problem_id": "18258",
+      "title": "큐 2",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "큐"
+      ],
+      "source": "solved.ac"
+    },
+    "1003": {
+      "problem_id": "1003",
+      "title": "피보나치 함수",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "1012": {
+      "problem_id": "1012",
+      "title": "유기농 배추",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "깊이 우선 탐색",
+        "격자 그래프",
+        "플러드 필"
+      ],
+      "source": "solved.ac"
+    },
+    "1260": {
+      "problem_id": "1260",
+      "title": "DFS와 BFS",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "깊이 우선 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "1463": {
+      "problem_id": "1463",
+      "title": "1로 만들기",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "1541": {
+      "problem_id": "1541",
+      "title": "잃어버린 괄호",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "그리디 알고리즘",
+        "문자열",
+        "파싱"
+      ],
+      "source": "solved.ac"
+    },
+    "1697": {
+      "problem_id": "1697",
+      "title": "숨바꼭질",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "1874": {
+      "problem_id": "1874",
+      "title": "스택 수열",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "자료구조",
+      "tags": [
+        "자료 구조",
+        "스택"
+      ],
+      "source": "solved.ac"
+    },
+    "1904": {
+      "problem_id": "1904",
+      "title": "01타일",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "1912": {
+      "problem_id": "1912",
+      "title": "연속합",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "배열",
+      "tags": [
+        "다이나믹 프로그래밍",
+        "최대 부분 배열 문제"
+      ],
+      "source": "solved.ac"
+    },
+    "1931": {
+      "problem_id": "1931",
+      "title": "회의실 배정",
+      "level": 11,
+      "tier": "Gold V",
+      "category": "정렬",
+      "tags": [
+        "그리디 알고리즘",
+        "정렬"
+      ],
+      "source": "solved.ac"
+    },
+    "1932": {
+      "problem_id": "1932",
+      "title": "정수 삼각형",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "2156": {
+      "problem_id": "2156",
+      "title": "포도주 시식",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "2178": {
+      "problem_id": "2178",
+      "title": "미로 탐색",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "격자 그래프"
+      ],
+      "source": "solved.ac"
+    },
+    "2206": {
+      "problem_id": "2206",
+      "title": "벽 부수고 이동하기",
+      "level": 13,
+      "tier": "Gold III",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "격자 그래프"
+      ],
+      "source": "solved.ac"
+    },
+    "2579": {
+      "problem_id": "2579",
+      "title": "계단 오르기",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "2606": {
+      "problem_id": "2606",
+      "title": "바이러스",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "깊이 우선 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "2665": {
+      "problem_id": "2665",
+      "title": "미로만들기",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "최단 경로",
+        "데이크스트라",
+        "격자 그래프",
+        "0-1 너비 우선 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "2667": {
+      "problem_id": "2667",
+      "title": "단지번호붙이기",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "깊이 우선 탐색",
+        "격자 그래프",
+        "플러드 필"
+      ],
+      "source": "solved.ac"
+    },
+    "4963": {
+      "problem_id": "4963",
+      "title": "섬의 개수",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "깊이 우선 탐색",
+        "격자 그래프",
+        "플러드 필"
+      ],
+      "source": "solved.ac"
+    },
+    "5014": {
+      "problem_id": "5014",
+      "title": "스타트링크",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "7569": {
+      "problem_id": "7569",
+      "title": "토마토",
+      "level": 11,
+      "tier": "Gold V",
+      "category": "그래프",
+      "tags": [
+        "너비 우선 탐색",
+        "그래프 이론",
+        "그래프 탐색",
+        "격자 그래프",
+        "최단 경로"
+      ],
+      "source": "solved.ac"
+    },
+    "9019": {
+      "problem_id": "9019",
+      "title": "DSLR",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "너비 우선 탐색",
+        "역추적"
+      ],
+      "source": "solved.ac"
+    },
+    "9095": {
+      "problem_id": "9095",
+      "title": "1, 2, 3 더하기",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "9461": {
+      "problem_id": "9461",
+      "title": "파도반 수열",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "10844": {
+      "problem_id": "10844",
+      "title": "쉬운 계단 수",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "11726": {
+      "problem_id": "11726",
+      "title": "2×n 타일링",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "11727": {
+      "problem_id": "11727",
+      "title": "2×n 타일링 2",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "DP",
+      "tags": [
+        "다이나믹 프로그래밍"
+      ],
+      "source": "solved.ac"
+    },
+    "14501": {
+      "problem_id": "14501",
+      "title": "퇴사",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "완전탐색",
+      "tags": [
+        "다이나믹 프로그래밍",
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "16234": {
+      "problem_id": "16234",
+      "title": "인구 이동",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "그래프 이론",
+        "그래프 탐색",
+        "시뮬레이션",
+        "너비 우선 탐색"
+      ],
+      "source": "solved.ac"
+    },
+    "1011": {
+      "problem_id": "1011",
+      "title": "Fly me to the Alpha Centauri",
+      "level": 11,
+      "tier": "Gold V",
+      "category": "수학",
+      "tags": [
+        "수학"
+      ],
+      "source": "solved.ac"
+    },
+    "1018": {
+      "problem_id": "1018",
+      "title": "체스판 다시 칠하기",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "1065": {
+      "problem_id": "1065",
+      "title": "한수",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "완전탐색",
+      "tags": [
+        "수학",
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "1074": {
+      "problem_id": "1074",
+      "title": "Z",
+      "level": 11,
+      "tier": "Gold V",
+      "category": "기타",
+      "tags": [
+        "분할 정복",
+        "재귀"
+      ],
+      "source": "solved.ac"
+    },
+    "1107": {
+      "problem_id": "1107",
+      "title": "리모컨",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "완전탐색",
+      "tags": [
+        "브루트포스 알고리즘"
+      ],
+      "source": "solved.ac"
+    },
+    "1167": {
+      "problem_id": "1167",
+      "title": "트리의 지름",
+      "level": 14,
+      "tier": "Gold II",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "트리",
+        "깊이 우선 탐색",
+        "트리의 지름"
+      ],
+      "source": "solved.ac"
+    },
+    "1629": {
+      "problem_id": "1629",
+      "title": "곱셈",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "분할 정복을 이용한 거듭제곱"
+      ],
+      "source": "solved.ac"
+    },
+    "1712": {
+      "problem_id": "1712",
+      "title": "손익분기점",
+      "level": 4,
+      "tier": "Bronze II",
+      "category": "수학",
+      "tags": [
+        "수학",
+        "사칙연산"
+      ],
+      "source": "solved.ac"
+    },
+    "1753": {
+      "problem_id": "1753",
+      "title": "최단경로",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "최단 경로",
+        "데이크스트라"
+      ],
+      "source": "solved.ac"
+    },
+    "1806": {
+      "problem_id": "1806",
+      "title": "부분합",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "기타",
+      "tags": [
+        "누적 합",
+        "두 포인터"
+      ],
+      "source": "solved.ac"
+    },
+    "2448": {
+      "problem_id": "2448",
+      "title": "별 찍기 - 11",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "기타",
+      "tags": [
+        "재귀"
+      ],
+      "source": "solved.ac"
+    },
+    "2630": {
+      "problem_id": "2630",
+      "title": "색종이 만들기",
+      "level": 9,
+      "tier": "Silver II",
+      "category": "기타",
+      "tags": [
+        "분할 정복",
+        "재귀"
+      ],
+      "source": "solved.ac"
+    },
+    "5430": {
+      "problem_id": "5430",
+      "title": "AC",
+      "level": 11,
+      "tier": "Gold V",
+      "category": "배열",
+      "tags": [
+        "덱",
+        "파싱",
+        "구현",
+        "문자열",
+        "자료 구조"
+      ],
+      "source": "solved.ac"
+    },
+    "7662": {
+      "problem_id": "7662",
+      "title": "이중 우선순위 큐",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "그래프",
+      "tags": [
+        "자료 구조",
+        "집합과 맵",
+        "트리를 사용한 집합과 맵",
+        "우선순위 큐"
+      ],
+      "source": "solved.ac"
+    },
+    "9663": {
+      "problem_id": "9663",
+      "title": "N-Queen",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "완전탐색",
+      "tags": [
+        "브루트포스 알고리즘",
+        "백트래킹"
+      ],
+      "source": "solved.ac"
+    },
+    "9935": {
+      "problem_id": "9935",
+      "title": "문자열 폭발",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "문자열",
+      "tags": [
+        "자료 구조",
+        "문자열",
+        "스택"
+      ],
+      "source": "solved.ac"
+    },
+    "10814": {
+      "problem_id": "10814",
+      "title": "나이순 정렬",
+      "level": 6,
+      "tier": "Silver V",
+      "category": "정렬",
+      "tags": [
+        "정렬",
+        "집합과 맵"
+      ],
+      "source": "solved.ac"
+    },
+    "11399": {
+      "problem_id": "11399",
+      "title": "ATM",
+      "level": 7,
+      "tier": "Silver IV",
+      "category": "정렬",
+      "tags": [
+        "그리디 알고리즘",
+        "정렬"
+      ],
+      "source": "solved.ac"
+    },
+    "11403": {
+      "problem_id": "11403",
+      "title": "경로 찾기",
+      "level": 10,
+      "tier": "Silver I",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "그래프 탐색",
+        "최단 경로",
+        "플로이드–워셜"
+      ],
+      "source": "solved.ac"
+    },
+    "11404": {
+      "problem_id": "11404",
+      "title": "플로이드",
+      "level": 12,
+      "tier": "Gold IV",
+      "category": "그래프",
+      "tags": [
+        "그래프 이론",
+        "최단 경로",
+        "플로이드–워셜"
+      ],
+      "source": "solved.ac"
+    },
+    "15649": {
+      "problem_id": "15649",
+      "title": "N과 M (1)",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "완전탐색",
+      "tags": [
+        "백트래킹"
+      ],
+      "source": "solved.ac"
+    },
+    "15650": {
+      "problem_id": "15650",
+      "title": "N과 M (2)",
+      "level": 8,
+      "tier": "Silver III",
+      "category": "완전탐색",
+      "tags": [
+        "백트래킹"
+      ],
+      "source": "solved.ac"
+    },
+    "16236": {
+      "problem_id": "16236",
+      "title": "아기 상어",
+      "level": 13,
+      "tier": "Gold III",
+      "category": "배열",
+      "tags": [
+        "구현",
+        "그래프 이론",
+        "그래프 탐색",
+        "시뮬레이션",
+        "너비 우선 탐색"
+      ],
+      "source": "solved.ac"
+    }
+  }
+}
