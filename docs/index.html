@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Algorithm Problem Gacha | SSAFY Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎰 Algorithm Problem Gacha</h1>
+            <p class="subtitle">매주 새로운 알고리즘 문제를 가챠로 뽑아보세요!</p>
+        </header>
+
+        <div class="auth-section" id="authSection">
+            <div class="auth-card">
+                <h2>GitHub 로그인</h2>
+                <p>가챠를 이용하려면 GitHub 로그인이 필요합니다</p>
+                <button class="github-login-btn" onclick="loginWithGitHub()">
+                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub으로 로그인
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content" id="mainContent" style="display: none;">
+            <div class="user-info">
+                <div class="user-profile">
+                    <img id="userAvatar" class="avatar" src="" alt="User Avatar">
+                    <div class="user-details">
+                        <h3 id="userName">사용자</h3>
+                        <p id="userStats">이번 주 사용: <span id="weeklyUsage">0</span>/3</p>
+                    </div>
+                </div>
+                <button class="logout-btn" onclick="logout()">로그아웃</button>
+            </div>
+
+            <div class="gacha-section">
+                <h2>🎲 카테고리 선택</h2>
+                <div class="categories">
+                    <div class="category-card" data-category="배열">
+                        <div class="category-icon">📊</div>
+                        <h3>배열</h3>
+                        <p>구현, 시뮬레이션</p>
+                        <span class="problem-count" id="count-배열">0개</span>
+                    </div>
+                    <div class="category-card" data-category="완전탐색">
+                        <div class="category-icon">🔍</div>
+                        <h3>완전탐색</h3>
+                        <p>브루트포스, 백트래킹</p>
+                        <span class="problem-count" id="count-완전탐색">0개</span>
+                    </div>
+                    <div class="category-card" data-category="그래프">
+                        <div class="category-icon">🕸️</div>
+                        <h3>그래프</h3>
+                        <p>DFS, BFS, 최단경로</p>
+                        <span class="problem-count" id="count-그래프">0개</span>
+                    </div>
+                    <div class="category-card" data-category="DP">
+                        <div class="category-icon">🧠</div>
+                        <h3>DP</h3>
+                        <p>다이나믹 프로그래밍</p>
+                        <span class="problem-count" id="count-DP">0개</span>
+                    </div>
+                    <div class="category-card" data-category="수학">
+                        <div class="category-icon">🔢</div>
+                        <h3>수학</h3>
+                        <p>정수론, 조합론</p>
+                        <span class="problem-count" id="count-수학">0개</span>
+                    </div>
+                    <div class="category-card" data-category="자료구조">
+                        <div class="category-icon">📚</div>
+                        <h3>자료구조</h3>
+                        <p>스택, 큐, 트리</p>
+                        <span class="problem-count" id="count-자료구조">0개</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gacha-controls">
+                <div class="selected-category">
+                    <p>선택된 카테고리: <span id="selectedCategory">없음</span></p>
+                </div>
+                <button class="gacha-btn" id="gachaBtn" onclick="drawProblem()" disabled>
+                    🎰 문제 뽑기!
+                </button>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <div class="result-tier" id="resultTier"></div>
+                    <h3 id="resultTitle">문제 제목</h3>
+                    <div class="result-info">
+                        <p><strong>번호:</strong> <span id="resultId"></span></p>
+                        <p><strong>난이도:</strong> <span id="resultDifficulty"></span></p>
+                        <p><strong>카테고리:</strong> <span id="resultCategory"></span></p>
+                    </div>
+                    <div class="result-actions">
+                        <a id="bojLink" href="#" target="_blank" class="btn-link">BOJ에서 보기</a>
+                        <button class="send-btn" onclick="sendToRepo()">내 리포지토리로 보내기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h3>🏆 최근 뽑은 문제</h3>
+                <div class="history-list" id="historyList">
+                    <p class="no-history">아직 뽑은 문제가 없습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading" id="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>문제를 뽑는 중...</p>
+    </div>
+
+    <script src="gacha.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+title: "Algorithm Problem Gacha"
+description: "매주 새로운 알고리즘 문제를 가챠로 뽑아보세요!"
+theme: minima
+
+# GitHub Pages 설정
+url: "https://ssafystudyalgopoolja.github.io"
+baseurl: "/problem-box"
+
+# 플러그인
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 제외할 파일들
+exclude:
+  - boj/
+  - .github/
+  - README.md
+  - .gitignore
