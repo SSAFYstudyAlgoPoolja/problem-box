@@ -10,15 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      metadata: read
-      pull-requests: write
       
     steps:
       - name: 저장소 체크아웃
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.MY_GITHUB_TOKEN }}
-          persist-credentials: false
 
       - name: Python 설치
         uses: actions/setup-python@v4
