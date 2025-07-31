@@ -1,6 +1,7 @@
 [build]
   functions = "netlify/functions"
   publish = "docs"
+  environment = { SECRETS_SCAN_OMIT_KEYS = "GITHUB_CLIENT_ID" }
 
 [functions]
   node_bundler = "esbuild"
