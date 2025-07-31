@@ -5,7 +5,7 @@ let selectedCategory = null;
 let currentProblem = null;
 
 // GitHub App 설정 (진짜 OAuth!)
-const GITHUB_CLIENT_ID = window.NETLIFY_ENV?.GITHUB_CLIENT_ID || 'Iv23liDaJh9UDXOPLKCC';
+const GITHUB_CLIENT_ID = 'Iv23liDaJh9UDXOPLKCC'; // ✅ 실제 GitHub App Client ID
 const REPO_OWNER = 'SSAFYstudyAlgoPoolja';
 const REPO_NAME = 'problem-box';
 const NETLIFY_DOMAIN = 'algorithm-problem-gacha.netlify.app'; // ✅ 실제 Netlify 도메인
