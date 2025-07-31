@@ -20,10 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (code) {
         handleGitHubCallback(code);
-    } else {
-        // OAuth 없이 데모 사용자로 자동 로그인
+    } else if (!GITHUB_CLIENT_ID) {
+        // GitHub Client ID가 없으면 데모 모드
         setupDemoUser();
     }
+    // 그 외에는 OAuth 로그인 버튼 표시
     
     loadProblemsData();
     initializeEventListeners();
@@ -228,23 +229,40 @@ async function loadProblemsData() {
     try {
         showLoading('문제 데이터 로딩 중...');
         
-        // GitHub API를 통해 메타데이터 로드
-        const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/boj/problems/metadata.json`);
+        // GitHub Pages에서 직접 메타데이터 로드 (여러 URL 시도)
+        const urls = [
+            `./metadata.json`,  // docs/ 폴더 내 복사본
+            `https://${REPO_OWNER.toLowerCase()}.github.io/${REPO_NAME}/boj/problems/metadata.json`,
+            `../boj/problems/metadata.json`
+        ];
         
-        if (response.ok) {
-            const data = await response.json();
-            const content = JSON.parse(atob(data.content));
-            problemsData = content;
-            updateCategoryCards();
-        } else {
-            console.log('메타데이터 파일이 없습니다. 샘플 데이터를 사용합니다.');
+        let loaded = false;
+        for (const url of urls) {
+            try {
+                console.log('🔍 시도 중:', url);
+                const response = await fetch(url);
+                if (response.ok) {
+                    problemsData = await response.json();
+                    console.log('✅ 문제 데이터 로드 성공:', problemsData.total_problems, '개 문제');
+                    updateCategoryCards();
+                    loaded = true;
+                    break;
+                }
+            } catch (err) {
+                console.log('❌ URL 실패:', url, err.message);
+            }
+        }
+        
+        if (!loaded) {
+            console.log('❌ 모든 URL 실패. 샘플 데이터를 사용합니다.');
             problemsData = createSampleData();
             updateCategoryCards();
         }
         
         hideLoading();
     } catch (error) {
-        console.error('문제 데이터 로드 실패:', error);
+        console.error('❌ 문제 데이터 로드 실패:', error);
+        console.log('🎯 샘플 데이터로 대체합니다.');
         problemsData = createSampleData();
         updateCategoryCards();
         hideLoading();
